@@ -1,0 +1,9 @@
+openai
+qdrant-client 
+cohere 
+langchain
+langchain-community
+langchain-core
+langchain-groq
+sentence-transformers
+python-dotenv
