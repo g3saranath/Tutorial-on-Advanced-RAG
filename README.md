@@ -43,18 +43,18 @@ Step 1: Installing the library
 	pip install python-dotenv
 Step 2: Creating `.env` file in the root directory of our project. It is a file that stores key-value pairs, representing an environment variable and its value. 
 ```
-	GROQ_API_KEY = `your-groq-api-key`
-	QDRANT_API_KEY = `your-qdrant-api-key`
-    QDRANT_API_URL = `your-qdrant-url`
-	COHERE_API_KEY = `your-cohere-api-key`
+GROQ_API_KEY = `your-groq-api-key`
+QDRANT_API_KEY = `your-qdrant-api-key`
+QDRANT_API_URL = `your-qdrant-url`
+COHERE_API_KEY = `your-cohere-api-key`
 ```
 Replace `your-groq-api-key`, `your-qdrant-api-key`, `your-qdrant-url`, `your-cohere-api-key`with your actual API keys.
 NOTE: It is essential to add your .env file in your .gitignore file to ensure it doesn’t reflect in your version control system. 
 Step 3: Open your `.gitignore` file (create one if it doesn’t exist). Add `.env` file on a new line and save the `.gitignore` file
 Step 4: Now that we have setup our `.env` file, we will start using it in our Python code. 
 ```	
-    from dotenv import load_dotenv
-	load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 ```
 In the tutorial, we will see how we use these stored API keys in the `.env` file for our application. 
 
@@ -77,16 +77,16 @@ Sample Dataset: Information on “Challenges in Quantum Computing”
 Creating a conda environment or python venv. Implement the following on `terminal/cmd`.
 If Conda: 
 ```
-	conda create --name adv_rag
-	conda install pip
-	pip install -r requirements.txt
+conda create --name adv_rag
+conda install pip
+pip install -r requirements.txt
 ```
 
 If Python venv:
 ```
-	python3 -m venv .adv_rag
-	source .venv/bin/activate
-	python install -r requirements.txt
+python3 -m venv .adv_rag
+source .venv/bin/activate
+python install -r requirements.txt
 ```
 
 ## Code: 
